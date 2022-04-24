@@ -43,7 +43,7 @@ namespace NAVETing
         async Task SimulateStartup()
         {
             await Task.Delay(TimeSpan.FromSeconds(8));
-            StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+            StartActivity(new Intent(Application.Context, typeof(LoginActivity)));
         }
     }
 }
