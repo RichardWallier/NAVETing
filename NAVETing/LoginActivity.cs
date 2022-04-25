@@ -35,7 +35,8 @@ namespace NAVETing
         }
         private void LoginSuccessfull()
         {
-
+            Intent mainIntent = new Intent(this, typeof(MainActivity));
+            StartActivity(mainIntent);
         }
         private void LoginUnsuccessfull()
         {
@@ -43,8 +44,6 @@ namespace NAVETing
             var passwordEditText = FindViewById<EditText>(Resource.Id.passwordEditText);
             var statusLoginTextView = FindViewById<TextView>(Resource.Id.statusLoginTextView);
             statusLoginTextView.Text = "Email or Password Invalid";
-            emailEditText.Text = "";
-            passwordEditText.Text = "";
         }
     }
 }

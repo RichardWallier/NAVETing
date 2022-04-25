@@ -4,20 +4,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:text="Log In"
-        android:textSize="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:id="@+id/logButton" />
-    <Button
-        android:text="sign in"
-        android:textSize="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/logButton"
-        android:id="@+id/signButton" />
     <TextView
         android:text="NAVETing Studies"
         android:layout_width="wrap_content"
@@ -26,13 +12,62 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:id="@+id/textViewCopyright" />
-    <Button
-        android:text="Open Splash Screen"
+    <TextView
+        android:text="Nome: "
+        android:textSize="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/signButton"
-        android:id="@+id/buttonOpenSplashScreen" />
-
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/nameTextView" 
+        />
+    <TextView
+        android:text="&lt;name&gt;"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/nameTextView"
+        android:id="@+id/usernameTextView" />
+    <TextView
+        android:text="Email: "
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="75dp"
+        android:id="@+id/emailTextView" 
+        />
+    <TextView
+        android:text="&lt;email&gt;"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:layout_toRightOf="@id/emailTextView"
+        android:id="@+id/useremailTextView" 
+        />
+    <TextView
+        android:text="Password: "
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="125dp"
+        android:id="@+id/passwordTextView" 
+        />
+    <TextView
+        android:text="&lt;passwd&gt;"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:layout_toRightOf="@id/passwordTextView"
+        android:id="@+id/userpasswordTextView" />
+    <Button
+        android:text="Mudar Credenciais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textViewCopyright"
+        android:id="@+id/changeDefaultUserCredentials" />
 </RelativeLayout>
