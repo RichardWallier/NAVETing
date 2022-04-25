@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using NAVETing.ProgramData;
 
 namespace NAVETing
 {
@@ -26,7 +27,13 @@ namespace NAVETing
         {
             var newUserName = FindViewById<EditText>(Resource.Id.newUserNameEditText);    
             var newUserEmail = FindViewById<EditText>(Resource.Id.newUserEmailEditText);    
-            var newUserPassword = FindViewById<EditText>(Resource.Id.newUserPasswordEditText);    
+            var newUserPassword = FindViewById<EditText>(Resource.Id.newUserPasswordEditText);
+            Data defaultUser = new Data();
+            defaultUser.name = newUserName.Text;
+            defaultUser.email = newUserEmail.Text;
+            defaultUser.password = newUserPassword.Text;
+            Intent loginIntent = new Intent(this, typeof(LoginActivity));
+            StartActivity(loginIntent);
         }
     }
 }
